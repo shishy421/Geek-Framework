@@ -1,3 +1,3 @@
 #!/bin/sh
-git pull origin master
+git pull deploy deploy
 mvn package
