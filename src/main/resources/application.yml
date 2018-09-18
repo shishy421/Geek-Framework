@@ -122,7 +122,7 @@ upload:
     #选择上传方式配置
     ##文件上传只能选择一种方式
     ##文件上传方式可以参数 local    qiniu   oss 本例以七牛为例
-    up-type : "local"
+    up-type : "qiniu"
     ##文件访问地址  本地上传资源访问地址
     up-cdn : "http://localhost"
     ##本地上传路径
@@ -146,13 +146,13 @@ aliyun:
 #七牛上传配置
 qiniu:
   ##七牛AK
-  access-key :
+  access-key : nEg_wo0Xa1Q-7RzaPfeYO2xkxuY40Ns25E2VUNHS
   ##七牛SK
-  secret-key :
+  secret-key : CMdcgbQnaa52GgcnxAznajEwz1ajSLxXd8annQWk
   ##七牛token空间
-  bucket :
+  bucket : gf-img
   ##七牛访问地址CDN
-  domain :
+  domain :  http://getimg.geekcattle.com
 
   ##ueditor文件上传配置JSON
 ueditor:
