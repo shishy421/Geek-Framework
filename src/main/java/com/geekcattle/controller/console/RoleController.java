@@ -130,8 +130,8 @@ public class RoleController {
                 return ReturnUtil.Error("Error", null, null);
             } else {
                 for (String id : ids) {
-                    adminRoleService.deleteRoleId(id);
-                    roleService.deleteById(id);
+                    //adminRoleService.deleteRoleId(id);
+                    //roleService.deleteById(id);
                 }
                 return ReturnUtil.Success("操作成功", null, null);
             }

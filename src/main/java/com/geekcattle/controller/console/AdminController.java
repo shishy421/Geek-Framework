@@ -194,7 +194,7 @@ public class AdminController {
                     pwdAdmin.setPassword(newPassword);
                     Example example = new Example(Admin.class);
                     example.createCriteria().andCondition("uid", uid);
-                    adminService.updateExample(pwdAdmin, example);
+                    //adminService.updateExample(pwdAdmin, example);
                     return ReturnUtil.Success("操作成功", null, null);
                 } else {
                     return ReturnUtil.Error("对像不存在，修改失败", null, null);
@@ -216,8 +216,8 @@ public class AdminController {
             if (ids != null) {
                 if (StringUtils.isNotBlank(ids.toString())) {
                     for (String id : ids) {
-                        adminRoleService.deleteAdminId(id);
-                        adminService.deleteById(id);
+                        //adminRoleService.deleteAdminId(id);
+                        //adminService.deleteById(id);
                     }
                 }
                 return ReturnUtil.Success("删除成功", null, null);
