@@ -196,7 +196,7 @@ dubbo:
     port: 12345
     status: server
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://121.41.17.147:2181
     id: registry
   scan:
     basePackages: com.geekcattle.dubbo.service
