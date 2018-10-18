@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CustomerController {
 
-    @Reference(url = "dubbo://localhost:12345", check = false)
+    //@Reference(url = "dubbo://localhost:12345", check = false)
     private DemoService demoService;
 
     @RequestMapping("/sayHello")

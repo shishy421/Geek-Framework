@@ -74,14 +74,18 @@ spring:
 
 #mybaties配置
 mybatis:
-  mapper-locations: classpath:mapper/*.xml,classpath:mapper/*/*.xml
+  mapper-locations: classpath:mapper/*.xml,classpath:mapper/*/*.xml,classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml
   type-aliases-package: com.geekcattle.model
 
 #mapper配置
 mapper:
   plugin : tk.mybatis.mapper.generator.MapperPlugin
   not-empty: false
-  mappers : com.geekcattle.core.CustomerMapper
+  mappers :
+    - com.geekcattle.core.CustomerMapper
+    - com.gitee.sunchenbin.mybatis.actable.dao.common.BaseMysqlCRUDMapper
+    - com.gitee.sunchenbin.mybatis.actable.dao.system.CreateMysqlTablesMapper
+
 
 #pagehelper
 pagehelper:
@@ -181,6 +185,7 @@ j2cache:
   allow-null-values : true
   cache-clean-mode : passive
   redis-client : lettuce
+
 
 
 
